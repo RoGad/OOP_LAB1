@@ -8,6 +8,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         String string = in.nextLine();
         String[] words = string.split("\\s+");
+        // Можно было написать через ArrayList, но тогда нужно было листы создавать разных типов.
         HashMap<String, Integer> wordToCount = new HashMap<>();
         for (String word : words)
         {
